@@ -1,0 +1,19 @@
+.image{
+    height: 80px;
+    min-width: 300px;
+    margin-left: 100px;
+    animation:move-rtl 10s linear infinite;
+    display: flex;
+    justify-content: center;
+}
+.image>img{
+    width:80px;
+}
+@keyframes move-rtl{
+    0%{
+        transform: translate3d(0, 0, 0);
+    }
+    100%{
+        transform: translate3d(-1500px, 0, 0);
+    }
+}
